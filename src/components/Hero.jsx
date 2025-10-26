@@ -16,7 +16,7 @@ export default function Hero() {
           </div>
         </div>
         <div className="hero-art">
-          <img src="/public/placeholder.svg" alt="profile placeholder" />
+          <img src="/profile.jpg" alt="Rachayita Debnath" />
         </div>
       </div>
     </section>

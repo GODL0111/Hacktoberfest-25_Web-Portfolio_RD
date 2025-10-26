@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import ThemeToggle from './ThemeToggle'
 
 export default function Nav() {
   const [open, setOpen] = useState(false)
@@ -15,13 +16,16 @@ export default function Nav() {
           <a href="#education">Education</a>
           <a href="#contact">Contact</a>
         </nav>
-        <button
-          aria-label="Toggle menu"
-          className="nav-toggle"
-          onClick={() => setOpen((v) => !v)}
-        >
-          ☰
-        </button>
+        <div className="nav-actions">
+          <ThemeToggle />
+          <button
+            aria-label="Toggle menu"
+            className="nav-toggle"
+            onClick={() => setOpen((v) => !v)}
+          >
+            ☰
+          </button>
+        </div>
       </div>
     </header>
   )
